@@ -1,0 +1,132 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(224, 110, 110, 0.86);
+}
+#img_top{
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#img_top img{
+    background-color: rgba(224, 110, 110, 0.86);
+    height: 80%;
+}
+#head_main{
+    margin-top: 1%;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+#amount_input{
+    height: 4%;
+    margin-top: 1.5%;
+    display: flex;
+    justify-content: center;
+}
+#amount_input input{
+    text-align: center;
+    height: 90%;
+    font-size: 25px;
+    border: none;
+    background: none;
+    border-bottom: 1px solid black;
+    text-decoration: none;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+#main_select{
+    display: flex;
+    width: 100%;
+    height: 10%;
+    margin-top: 5%;
+    justify-content: space-around;
+    align-items: center;
+}
+.main_select_2{
+    display: flex;
+    width: 150px;
+    height: 50px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(217, 217, 217, 1);
+    border-radius: 10px;
+}
+.main_select_option{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.main_select_option label{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.main_select_option label img{
+    width: 20px;
+}
+.main_select_option select{
+    border: none;
+    appearance: none;
+    background-color: rgba(217, 217, 217, 1);
+    font-size: 17px;
+    width: 60px;
+    border-right: 2px solid black;
+    text-align: left;
+}
+#exchange_icon img{
+    width: 30px;
+}
+
+#convert_button{ 
+    margin-top: 3%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#convert_button button{
+    background-color: rgba(217, 217, 217, 1);
+    border: none;
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+#output_final{
+    margin-top: 5%;
+    text-align: center;
+    width: 100%;
+    font-size: 30px;
+    font-style: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+@media (width <= 700px){
+    #amount_input{
+        margin-top: 4%;
+    }
+    #amount_input input{
+        font-size: 22px;
+    }
+    #main_select{
+        margin-top: 10%;
+    }
+    #convert_button{ 
+        margin-top: 5%;
+    }
+    #output_final{
+        margin-top: 7%;
+    }
+}
