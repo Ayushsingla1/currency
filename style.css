@@ -88,7 +88,6 @@ input[type=number]::-webkit-outer-spin-button {
 #exchange_icon img{
     width: 30px;
 }
-
 #convert_button{ 
     margin-top: 3%;
     width: 100%;
@@ -103,6 +102,7 @@ input[type=number]::-webkit-outer-spin-button {
     width: 80px;
     height: 30px;
     border-radius: 5px;
+    transition: all 1s;
 }
 
 #output_final{
@@ -113,6 +113,10 @@ input[type=number]::-webkit-outer-spin-button {
     font-style: normal;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+#convert_button button:hover{
+    background-color: rgba(224, 110, 110, 0.86);
+    color: white;
+}
 @media (width <= 700px){
     #amount_input{
         margin-top: 4%;
@@ -122,11 +126,41 @@ input[type=number]::-webkit-outer-spin-button {
     }
     #main_select{
         margin-top: 10%;
+        flex-direction: column;
+        row-gap: 10px;
+        height: 30%;
     }
     #convert_button{ 
         margin-top: 5%;
     }
+    #convert_button button{
+        height: 35px;
+        border-radius: 7px;
+    }
     #output_final{
         margin-top: 7%;
     }
+    #exchange_icon img{
+        width: 30px;
+        rotate: 90deg;
+    }
+    .main_select_2{
+        width: 300px;
+        border-radius: 10px;
+    }
+    .main_select_option{
+        width: 90%;
+    }
+    .main_select_option select{
+        background-color: rgba(217, 217, 217, 1);
+        font-size: 17px;
+        width: 200px;
+        border-right: 3px solid black;
+        text-align: left;
+    }
+    .main_select_option label img{
+        width: 20px;
+        margin-left: 10px;
+    }
 }
+
